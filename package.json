@@ -1,0 +1,23 @@
+
+{
+  "name":"ecommerce-admin-showcase",
+  "private": true,
+  "version":"1.0.0",
+  "scripts":{
+    "dev":"vite",
+    "server":"json-server --watch db.json --port 3001",
+    "build":"vite build"
+  },
+  "dependencies":{
+    "react":"^18.3.1",
+    "react-dom":"^18.3.1",
+    "react-router-dom":"^6.28.0",
+    "react-markdown":"^9.0.1",
+    "remark-gfm":"^4.0.0"
+  },
+  "devDependencies":{
+    "vite":"^5.4.0",
+    "@vitejs/plugin-react":"^4.3.0",
+    "json-server":"^1.0.0-beta.3"
+  }
+}
