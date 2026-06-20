@@ -1,0 +1,1 @@
+export default function useSearch(items,q){return items.filter(i=>i.name.toLowerCase().includes(q.toLowerCase()))}
