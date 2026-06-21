@@ -53,24 +53,6 @@ Visit: [http://localhost:5173](http://localhost:5173)
 
 ---
 
-##  Optional — json-server Backend
-
-```bash
-# Install &amp; run
-npm install -g json-server
-json-server --watch db.json --port 3001
-```
-
-Then in `ProductContext.jsx`:
-```js
-const USE_LOCAL = false; // Switch from localStorage to API
-```
-
-> Run both together: `npm run dev:full`
-> *(requires `concurrently` — `npm install concurrently --save-dev`)*
-
----
-
 ##  Tech Stack
 
 | Tech | Purpose |
