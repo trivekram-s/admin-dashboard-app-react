@@ -1,21 +1,20 @@
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import AddProduct from "./pages/AddProduct";
+import Products from "./pages/Products";
 
-import {Routes,Route,Link} from "react-router-dom";
-import {useState} from "react";
-import ProductForm from "./components/ProductForm";
-import AIChat from "./components/AIChat";
-import {useProducts} from "./context/ProductContext";
-import useSearch from "./hooks/useSearch";
-export default function App(){
- const {products,updatePrice}=useProducts();
- const [search,setSearch]=useState("");
- const filtered=useSearch(products,search);
- return <div style={{padding:"20px",maxWidth:"900px",margin:"auto"}}>
- <h1>E-Commerce Admin Dashboard</h1>
- <nav><Link to="/">Home</Link> | <Link to="/add">Add Product</Link> | <Link to="/products">Products</Link></nav>
- <Routes>
- <Route path="/" element={<div><p>Manage inventory, pricing and products.</p><AIChat/></div>} />
- <Route path="/add" element={<ProductForm/>}/>
- <Route path="/products" element={<div><input placeholder="Search products" value={search} onChange={e=>setSearch(e.target.value)}/>
- {filtered.map(p=><div key={p.id}><h3>{p.name}</h3><p>{p.description}</p><p>${p.price}</p><button onClick={()=>updatePrice(p.id)}>Increase Price</button></div>)}</div>} />
- </Routes></div>
+export default function App() {
+  return (
+    <div style={{ fontFamily: "sans-serif", minHeight: "100vh", backgroundColor: "#f4f6f8" }}>
+      <Navbar />
+      <div style={{ maxWidth: "900px", margin: "0 auto", padding: "0 20px 40px" }}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/add" element={<AddProduct />} />
+          <Route path="/products" element={<Products />} />
+        </Routes>
+      </div>
+    </div>
+  );
 }
