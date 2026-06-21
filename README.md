@@ -1,22 +1,22 @@
-# 🛒 E-Commerce Admin Dashboard
+#  E-Commerce Admin Dashboard
 
 A lightweight admin dashboard built with **React + Vite** for managing
 products, pricing and inventory.
 
 ---
 
-## ✨ Features
+##  Features
 
-- ➕ **Add Product** — Validated form with success feedback & auto-redirect
-- 🔍 **Search Products** — Real-time search by name, description or price
-- 💲 **Update Price** — Increase any product price by $1
-- 🗑️ **Delete Product** — Remove products instantly
-- 💾 **Persistent Storage** — localStorage by default, json-server optional
-- 🤖 **AI Assistant** — Integrated chat on the Home page
+-  **Add Product** — Validated form with success feedback & auto-redirect
+-  **Search Products** — Real-time search by name, description or price
+-  **Update Price** — Increase any product price by $1
+-  **Delete Product** — Remove products instantly
+-  **Persistent Storage** — localStorage by default, json-server optional
+-  **AI Assistant** — Integrated chat on the Home page
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```
 src/
@@ -41,7 +41,7 @@ src/
 
 ---
 
-## ⚙️ Setup
+##  Setup
 
 ```bash
 # Install &amp; run
@@ -53,7 +53,7 @@ Visit: [http://localhost:5173](http://localhost:5173)
 
 ---
 
-## 🗄️ Optional — json-server Backend
+##  Optional — json-server Backend
 
 ```bash
 # Install &amp; run
@@ -71,7 +71,7 @@ const USE_LOCAL = false; // Switch from localStorage to API
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Tech | Purpose |
 |---|---|
@@ -82,7 +82,7 @@ const USE_LOCAL = false; // Switch from localStorage to API
 
 ---
 
-## 📄 Routes
+##  Routes
 
 | Path | Page |
 |---|---|
@@ -92,7 +92,7 @@ const USE_LOCAL = false; // Switch from localStorage to API
 
 ---
 
-## 🔮 Roadmap
+##  Roadmap
 
 - [ ] Edit product
 - [ ] Category filter
